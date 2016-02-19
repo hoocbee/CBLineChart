@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "CBLineChartView.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    NSArray *dataArr = [NSArray arrayWithObjects:@"0", @"300", @"120", @"350", @"150", @"30", @"480", nil];
+    CBLineChartView *lcView = [[CBLineChartView alloc]initWithFrame:CGRectMake(10, 50, 300, 250) dataArray:dataArr maxValue:500];
+    lcView.backgroundColor = [UIColor orangeColor];
+    [self.view addSubview:lcView];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -25,3 +30,4 @@
 }
 
 @end
+

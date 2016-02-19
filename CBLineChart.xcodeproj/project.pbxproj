@@ -16,6 +16,7 @@
 		A79E634E1C772A5C00D2B9BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79E634C1C772A5C00D2B9BB /* LaunchScreen.storyboard */; };
 		A79E63591C772A5C00D2B9BB /* CBLineChartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A79E63581C772A5C00D2B9BB /* CBLineChartTests.m */; };
 		A79E63641C772A5C00D2B9BB /* CBLineChartUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A79E63631C772A5C00D2B9BB /* CBLineChartUITests.m */; };
+		A79E63731C772A9D00D2B9BB /* CBLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = A79E63721C772A9D00D2B9BB /* CBLineChartView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		A79E635F1C772A5C00D2B9BB /* CBLineChartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CBLineChartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A79E63631C772A5C00D2B9BB /* CBLineChartUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBLineChartUITests.m; sourceTree = "<group>"; };
 		A79E63651C772A5C00D2B9BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A79E63711C772A9100D2B9BB /* CBLineChartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBLineChartView.h; sourceTree = "<group>"; };
+		A79E63721C772A9D00D2B9BB /* CBLineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBLineChartView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 			children = (
 				A79E633E1C772A5C00D2B9BB /* AppDelegate.h */,
 				A79E633F1C772A5C00D2B9BB /* AppDelegate.m */,
+				A79E63711C772A9100D2B9BB /* CBLineChartView.h */,
+				A79E63721C772A9D00D2B9BB /* CBLineChartView.m */,
 				A79E63411C772A5C00D2B9BB /* ViewController.h */,
 				A79E63421C772A5C00D2B9BB /* ViewController.m */,
 				A79E63441C772A5C00D2B9BB /* Main.storyboard */,
@@ -275,6 +280,7 @@
 			files = (
 				A79E63431C772A5C00D2B9BB /* ViewController.m in Sources */,
 				A79E63401C772A5C00D2B9BB /* AppDelegate.m in Sources */,
+				A79E63731C772A9D00D2B9BB /* CBLineChartView.m in Sources */,
 				A79E633D1C772A5C00D2B9BB /* main.m in Sources */,
 				A79E63491C772A5C00D2B9BB /* CBLineChart.xcdatamodeld in Sources */,
 			);
