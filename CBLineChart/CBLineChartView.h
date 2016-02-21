@@ -11,7 +11,7 @@
 @interface CBLineChartView : UIView
 
 @property (nonatomic, strong) NSArray *dataArr;
-@property (nonatomic) NSInteger maxValue;
+@property (nonatomic, assign) NSInteger maxValue;
 
 - (instancetype)initWithFrame:(CGRect)frame dataArray:(NSArray *)dataArr maxValue: (NSInteger)maxValue;
 
