@@ -18,8 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSArray *dataArr = [NSArray arrayWithObjects:@"0", @"300", @"120", @"350", @"150", @"30", @"480", nil];
-    CBLineChartView *lcView = [[CBLineChartView alloc]initWithFrame:CGRectMake(10, 50, 300, 250) dataArray:dataArr maxValue:500];
-    lcView.backgroundColor = [UIColor orangeColor];
+    CBLineChartView *lcView = [[CBLineChartView alloc]initWithFrame:CGRectMake(10, 50, 300, 250) dataArray:dataArr];
+    lcView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:lcView];
     
 }
