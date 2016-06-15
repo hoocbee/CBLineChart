@@ -104,25 +104,6 @@
     [aPath closePath];
     [aPath fill];
     
-    /*测试:画control point*/
-//    nowX = beginX;
-//    nowY = beginY;
-//    lastY = nowY;
-//    for (int i = 1; i < self.dataArr.count; ++i) {
-//        CGContextSetStrokeColorWithColor(ctx, i%2?[UIColor redColor].CGColor:[UIColor greenColor].CGColor);
-//
-//        nowX += dataInterval;
-//        nowY = numToY([self.dataArr[i] floatValue]);
-//
-//        CGPoint controlPoint1 = CGPointMake(nowX - dataInterval / 2, lastY);
-//        CGPoint controlPoint2 = CGPointMake(nowX - dataInterval / 2, nowY);
-//        CGContextAddArc(ctx, controlPoint1.x, controlPoint1.y, 2, 0, M_PI * 2, 0);
-//        CGContextStrokePath(ctx);
-//        CGContextAddArc(ctx, controlPoint2.x, controlPoint2.y, 2, 0, M_PI * 2, 0);
-//        CGContextStrokePath(ctx);
-//        lastY = nowY;
-//    }
-    
     /*抹掉两个小圆*/
     CGContextSetFillColorWithColor(ctx, [UIColor whiteColor].CGColor);
     //最小圆
@@ -163,25 +144,7 @@
     CGContextSetFillColorWithColor(ctx, RectColor.CGColor);
     CGContextFillRect(ctx, CGRectMake(nowX - 1, nowY, (maxStr.length - 1) * 5.5 + 3, 10));
     [[NSString stringWithFormat:@"%.1f", maxValue]drawAtPoint:CGPointMake(nowX, nowY) withAttributes:fontStyle];
-    
-    /*画基准线*/
-    /*
-     //下实线
-     CGContextMoveToPoint(ctx, beginX - 5, beginY + 5);
-     CGContextAddLineToPoint(ctx, self.frame.size.width - 5, beginY + 5);
-     CGContextStrokePath(ctx);
-     //上实线
-     CGContextMoveToPoint(ctx, beginX - 5, numToY(self.maxValue));
-     CGContextAddLineToPoint(ctx, self.frame.size.width - 5, numToY(self.maxValue));
-     CGContextStrokePath(ctx);
-     //中间虚线
-     CGFloat lineStyle[] = {10,10};
-     CGContextSetLineDash(ctx, 0, lineStyle, 2);
-     CGContextMoveToPoint(ctx, beginX - 5, numToY(self.maxValue / 2));
-     CGContextAddLineToPoint(ctx, self.frame.size.width - 5, numToY(self.maxValue / 2));
-     CGContextStrokePath(ctx);
-     */
-    
+
     /*坐标文字*/
     fontStyle = @{NSFontAttributeName: [UIFont systemFontOfSize:12], NSForegroundColorAttributeName: FontColor};
     NSDate *date = [NSDate date];
